@@ -8,7 +8,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
 
   const usersList = UsersData.filter((val) => {
-    if (searchTerm == "") {
+    if (searchTerm === "") {
       return val;
     } else if (val.firstName.toLowerCase().includes(searchTerm.toLowerCase())) {
       return val;
