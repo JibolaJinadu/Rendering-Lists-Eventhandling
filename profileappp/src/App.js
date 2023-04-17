@@ -7,6 +7,7 @@ import {useState} from 'react';
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
 
+  
   const usersList = UsersData.filter((val) => {
     if (searchTerm === "") {
       return val;
